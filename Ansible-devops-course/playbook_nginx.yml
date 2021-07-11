@@ -1,0 +1,11 @@
+---
+- name : Enable nginx service
+  hosts: webserver
+  remote_user: tedix
+  become: yes
+  become_method: sudo
+  tasks:
+  - name: Install Nginx
+    apt:
+      name: nginx-extras
+      update_cache: yes
