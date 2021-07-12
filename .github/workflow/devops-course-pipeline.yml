@@ -1,0 +1,13 @@
+name: Github Actions DevOps course
+on: push
+jobs:
+  DevOps-Course-job:
+    runs-on: ubuntu-latest
+    steps:
+      -run: echo "Hello from Github Actions!"
+      -name: Show uptime
+       run: uptime
+      -name: Current dirrectory
+       run: pwd
+      -name: Date
+       run: date
